@@ -195,6 +195,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         for (int i = 0; i < itemNumber; i++) {
             sum += numbers[i];
         }
-        SnTv.setText(String.valueOf(sum));
+        SnTv.setText(String.valueOf(sum));//set the text to the value of sum
     }
 }
