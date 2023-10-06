@@ -67,7 +67,7 @@
             android:layout_width="120dp"
             android:layout_height="match_parent"
             android:onClick="noRestart"
-            android:text="continue" />
+            android:text="Back" />
 
         <Space
             android:layout_width="10dp"

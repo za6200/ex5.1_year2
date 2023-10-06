@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         adb.setView(my_dialog);
         adb.setTitle("serie info");
-        adb.setMessage("Please enter serie type(geometric/math), first num, progresor: ");
+        adb.setMessage("Please enter serie type(geometric/math), first num, progresor and then press enter: ");
         adb.setPositiveButton("Enter", myclick);
         adb.setNegativeButton("Cancel", myclick);
         dialog = adb.create(); // Create the dialog here
@@ -134,10 +134,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         firstNumAnswerField.setText("");
         progresorAnswerField.setText("");
 
-        X1Tv.setText(""); // Set the text to "0"
-        dTv.setText(""); // Set the text to "0"
-        nTv.setText(""); // Set the text to "0"
-        SnTv.setText(""); // Set the text to "0"
+        X1Tv.setText("");
+        dTv.setText("");
+        nTv.setText("");
+        SnTv.setText("");
 
         // Clear the ListView by creating a new empty array adapter
         ArrayAdapter<Double> emptyAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, new Double[0]);
