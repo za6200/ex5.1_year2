@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <Space
         android:layout_width="0dp"
@@ -50,7 +50,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="2"
                     android:gravity="center"
-                    android:text="=X1"
+                    android:text="X1="
                     android:textAlignment="gravity"
                     android:textSize="34sp" />
 
@@ -65,7 +65,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="2"
                     android:gravity="center"
-                    android:text="=d"
+                    android:text="d="
                     android:textAlignment="center"
                     android:textSize="34sp" />
 
@@ -80,7 +80,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="2"
                     android:gravity="center"
-                    android:text="=n"
+                    android:text="n="
                     android:textSize="34sp" />
 
                 <Space
@@ -94,7 +94,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="2"
                     android:gravity="center"
-                    android:text="=Sn"
+                    android:text="Sn="
                     android:textSize="34sp" />
 
                 <Space

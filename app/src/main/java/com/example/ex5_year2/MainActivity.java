@@ -2,12 +2,16 @@ package com.example.ex5_year2;
 
 import static java.lang.Math.pow;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -40,6 +44,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     Double numbers[];
     AlertDialog dialog; // Use AlertDialog as a member variable
 
+    Intent credits;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +62,29 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         SnTv = findViewById(R.id.SnTv);
         button = findViewById(R.id.button);
         makeSerie();
+        credits = new Intent(this, credits.class);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        /**
+         * function will make the option menu
+         * param menu: the menu
+         */
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        String st = item.getTitle().toString();
+        if (st.equals("credit")) {
+            try {
+                startActivity(credits);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return true;
     }
 
     DialogInterface.OnClickListener myclick = new DialogInterface.OnClickListener() {
